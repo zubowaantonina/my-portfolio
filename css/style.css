@@ -1,5 +1,6 @@
 body {
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
@@ -56,7 +57,11 @@ body {
   font-size: 48px;
   line-height: 125%;
 }
-
+.header-text-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
 .header-heading {
   font-weight: 700;
   font-size: 24px;
@@ -188,4 +193,111 @@ body {
 }
 .card-button-icon {
   margin-right: 4px;
+}
+.developer {
+  padding: 80px 0 20px;
+  display: flex;
+  align-items: center;
+}
+.developer-photo {
+  width: 360px;
+  height: 440px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.developer-about {
+  margin-left: 55px;
+}
+.developer-hello {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: #211b12;
+}
+.developer-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #bf7506;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.developer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #211b12;
+}
+.motto {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #dd9c3c;
+  margin: 16px 0;
+}
+.developer-sign {
+  width: 200px;
+  height: 70px;
+}
+.skills {
+  padding: 20px 0;
+}
+.skills-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  color: #211b12;
+}
+.feedback {
+  padding: 80px 0 160px;
+}
+.form-container {
+  max-width: 435px;
+  margin: auto;
+}
+.input-group {
+  position: relative;
+  padding-top: 9px;
+  margin-bottom: 24px;
+}
+.input-label {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #83807c;
+  padding: 0 8px;
+  background-color: #fff;
+  top: 0;
+  left: 16px;
+}
+.input {
+  border: 3px solid #e0dedc;
+  border-radius: 4px;
+  width: 435px;
+  height: 65px;
+}
+.text-input {
+  min-height: 140px;
+}
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit-button {
+  display: flex;
+  align-items: center;
+  padding: 7px 8px;
+  align-items: center;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  background-color: #fff;
+  color: #211b12;
+  border-bottom: 2px solid #bf7506;
+  cursor: pointer;
 }
