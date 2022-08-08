@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+  padding-top: 40px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -44,8 +45,10 @@ body {
 }
 
 .heder-photo {
-  width: 240px;
-  height: 240px;
+  max-width: 240px;
+  max-height: 240px;
+  object-fit: cover;
+object-position: top center;
 }
 
 .header-text {
@@ -172,13 +175,16 @@ body {
   border: 1px solid #dd9c3c;
   border-radius: 4px;
   margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .card-buttons {
   display: flex;
   align-items: center;
 }
-
+.card-image{
+  width: 100%;
+}
 .cart-button {
   display: flex;
   align-items: center;
@@ -253,6 +259,13 @@ body {
 }
 .feedback {
   padding: 80px 0 160px;
+  position: relative;
+}
+.feedback-hand{
+  position: absolute;
+  top:20%;
+ right: 0;
+ width: 25%;
 }
 .form-container {
   max-width: 435px;
@@ -277,7 +290,7 @@ body {
 .input {
   border: 3px solid #e0dedc;
   border-radius: 4px;
-  width: 435px;
+  width: 100%;
   height: 65px;
 }
 .text-input {
@@ -300,4 +313,98 @@ body {
   color: #211b12;
   border-bottom: 2px solid #bf7506;
   cursor: pointer;
+}
+@media (max-width:1024px){
+  .container{
+    max-width: 760px;
+  }
+  .card{
+    max-width: 350px;}
+}
+@media (max-width:790px){
+  .container{
+    max-width: 576px;
+  }
+  .heder-photo{
+    max-width: 170px;
+    object-fit: cover;
+  }
+.header-strong{
+  font-size: 36px;
+}
+.header-heading{
+  font-size: 18px;
+}
+.header-text-img{
+  max-width:30px;
+  max-height: 30px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.cv-download{
+  margin-left: 15px;
+}
+.card-text-wrapper{
+  padding: 8px 0;
+}
+.card{
+  width: 45%;
+}
+ .developer{
+  flex-direction: column;
+ }
+ .developer-photo{
+  width: 100%;
+  margin-bottom: 30px;
+ }
+ .developer-about{
+  margin-left: 0;
+  padding-left: 20px;
+ }
+ .feedback-hand{
+  display:none;
+ }
+}
+@media (max-width:600px){
+.container{
+  max-width: 90%;
+}
+.navbar{
+  flex-direction: column;
+}
+.header{
+  flex-direction: column;
+  padding-top: 0;
+  padding-top:10px;
+  text-align: center;
+}
+.header-links{
+  flex-direction: column;
+}
+.cv-download{
+  margin-left: 0;
+}
+.cards{
+  flex-direction: column;
+  align-items:center;
+ 
+}
+.card{
+  width: 100%;
+}
+.tags{
+  flex-wrap: wrap;
+}
+}
+@media (max-width:480px){
+.form-container{
+  max-width: 90%;
+}
+.nav-list{
+  flex-direction: column;
+}
+.nav-link{
+  margin-left: 0;
+  /* margin-bottom: 100px; */
+}
 }
